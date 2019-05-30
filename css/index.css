@@ -1,0 +1,374 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-size: 62.5%;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.main-header {
+  background-color: #00044A;
+  height: 20vh;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+}
+nav a {
+  margin: 30px 15px auto 10px;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Concert One', cursive;
+  transition: all 0.7s ease-in-out;
+  font-size: 1.1rem;
+}
+nav a:hover {
+  transition: all 0.4s ease-in-out;
+  background-color: yellow;
+  color: #00044A;
+  border: 3px solid;
+}
+nav a:hover:nth-last-child(1) {
+  background-color: #f10000;
+  color: white;
+  border: 0px solid;
+  font-size: 1.3rem;
+}
+.footer {
+  background: #00044A;
+  color: white;
+}
+@media (max-width: 600px) {
+  .footer {
+    text-align: center;
+  }
+}
+@media (max-width: 752px) {
+  .footer {
+    text-align: center;
+  }
+}
+.footer h3 {
+  font-size: 1.3rem;
+  font-family: 'quantico', sans-serif;
+  padding: 10px;
+}
+.footer span {
+  font-size: 1.2rem;
+  margin: 20px;
+  font-family: 'quantico', sans-serif;
+}
+.footer address {
+  margin-left: 20px;
+  padding-top: 5px;
+  font-size: 1.2rem;
+  font-family: 'quantico', sans-serif;
+}
+.footer p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  font-family: 'quantico', sans-serif;
+}
+.home-page-container {
+  max-width: 1800px;
+}
+.home-page-container .logo {
+  float: left;
+  margin: -30px 0px 30px 0px;
+  padding: 5px;
+}
+.home-page-container .our-mission {
+  background-image: url(/img/overlay.png), url(/img/art-background-blank-1020317.jpg);
+  background-repeat: repeat, no-repeat;
+  background-size: auto, 100% 100%;
+  background-attachment: fixed;
+  height: 60vh;
+  width: 100%;
+  overflow: hidden;
+}
+.home-page-container .our-mission .desktop-view {
+  font-size: 2.2rem;
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  padding-top: 30px;
+  margin-top: 20px;
+}
+@media (max-width: 600px) {
+  .home-page-container .our-mission .desktop-view {
+    display: none;
+  }
+}
+.home-page-container .our-mission .mobile-view {
+  font-size: 2.2rem;
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  padding-top: 30px;
+  margin-top: 20px;
+  display: none;
+}
+@media (max-width: 600px) {
+  .home-page-container .our-mission .mobile-view {
+    display: block;
+  }
+}
+.home-page-container .our-mission h3 {
+  text-align: center;
+  font-size: 1.9rem;
+  font-family: 'Quantico', sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px;
+}
+.home-page-container .our-mission .desktop-view-p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Kalam', cursive;
+  padding-bottom: 10px;
+}
+@media (max-width: 600px) {
+  .home-page-container .our-mission .desktop-view-p {
+    display: none;
+  }
+}
+.home-page-container .our-mission .mobile-view-p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Kalam', cursive;
+  padding-bottom: 10px;
+  display: none;
+}
+@media (max-width: 600px) {
+  .home-page-container .our-mission .mobile-view-p {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+  }
+}
+.home-page-container .our-mission .button {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+@media (max-width: 600px) {
+}
+.home-page-container .our-mission .button button {
+  width: 17vh;
+  height: 17vh;
+  background: #00044A;
+  color: #FFD11C;
+  font-size: 0.85rem;
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+  font-family: 'quantico', sans-serif;
+  padding: 6px;
+  border-radius: 90%;
+  border: 1px solid #00044A;
+}
+.home-page-container .our-mission .button button:hover {
+  transform: rotate(360deg);
+  background: #00077d;
+  color: white;
+}
+.home-page-container h2 {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 900;
+  padding: 10px;
+  font-family: 'quantico', sans-serif;
+  color: whitesmoke;
+}
+.home-page-container .jokes {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+.home-page-container .jokes .joke {
+  height: 50vh;
+  width: 50vh;
+  background-image: url(/img/overlay.png), url(/img/art-background-blank-1020317.jpg);
+  background-repeat: repeat, no-repeat;
+  background-size: auto, 100% 100%;
+  background-attachment: fixed;
+  border: 1px solid;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .home-page-container .jokes .joke {
+    width: 80%;
+  }
+}
+@media (max-width: 752px) {
+  .home-page-container .jokes .joke {
+    width: 80%;
+  }
+}
+.home-page-container .jokes .joke h3 {
+  font-size: 1.5rem;
+  font-family: 'quantico', sans-serif;
+  padding: 10px;
+}
+.home-page-container .jokes .joke p {
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: 'Kalam', cursive;
+  padding: 10px;
+}
+.home-page-container .jokes .joke span {
+  font-size: 1rem;
+  font-family: 'quantico', sans-serif;
+  padding: 10px;
+}
+.home-page-container .jokes .joke button {
+  padding: 5px;
+  border-radius: 5px;
+  background: #00044A;
+  color: #ffd11c;
+  border: 1px solid #00044A;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+.home-page-container .jokes .joke button:hover {
+  transform: translateY(5px);
+  background-color: #000ab0;
+}
+body {
+  font-size: 62.5%;
+  background-image: url(/img/overlay.png), url(/img/4k-wallpaper-architecture-background-1308624.jpg);
+  background-repeat: repeat, no-repeat;
+  background-size: auto, 100% 100%;
+  background-attachment: fixed;
+}
